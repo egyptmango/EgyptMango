@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="EgyptMango\Templates\Block\Templatestest" name="templatestest" template="helloworld.phtml">
+                <block class="EgyptMango\Templates\Block\Templatestest\JustChildBlock" name="templatest.child.block" as="childblock" />
+                <block class="Magento\Framework\View\Element\Template" template="EgyptMango_Templates::helloworld/childblockhtml.phtml" name="template.child.block.html" as="childblockhtml"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
